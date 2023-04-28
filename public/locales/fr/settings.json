@@ -1,0 +1,24 @@
+{
+  "general": {
+    "password": "Mot de passe",
+    "currentPassword": "Mot de passe actuel",
+    "typeNewPassword": "Taper nouveau mot de passe",
+    "confirmNewPassword": "Confirmer nouveau mot de passe",
+    "save": "Enregistrer",
+    "name": "Prénom",
+    "modify": "Modifier",
+    "surname": "Nom",
+    "emailAddress": "Adresse e-mail",
+    "phoneNumber": "Téléphone",
+    "birthdate": "Date de naissance",
+    "identity": "Identité"
+  },
+  "categories": {
+    "identityAndInfo": "Identité & informations",
+    "ordersAndBills": "Commandes & factures",
+    "bankDetails": "Coordonnées bancaires",
+    "privacy": "Confidentialité",
+    "security": "Sécurité",
+    "deleteAccount": "Supprimer le compte"
+  }
+}

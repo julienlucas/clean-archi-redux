@@ -1,0 +1,63 @@
+{
+  "general": {
+    "cancel": "Cancel",
+    "title": "[TODO]My profile",
+    "save": "Save",
+    "add": "Add"
+  },
+  "photo": {
+    "addSocialNetwork": "[TODO]Add a social network",
+    "country": "Country",
+    "currentLocation": "Current location",
+    "currentPosition": "Current positions",
+    "diplomasCertifications": "Diplomas and certifications obtained",
+    "editSocialNetwork": "Edit social networks",
+    "fakeAdress": "Salon C&C 13 rue Lamarte, 13003 Marseille",
+    "networkURL": "[TODO]URL de votre réseau",
+    "previousJobs": "Previous jobs",
+    "regionAndDepartments": "Regions and departments",
+    "title": "Photo and identity",
+    "titleLocality": "Locations of activity",
+    "titleModal": "[TODO]Photo de profil",
+    "titlePro": "Professional background",
+    "town": "Town"
+  },
+  "myAndragogProfile": {
+    "animation": "Coaching",
+    "collaboration": "Collaboration",
+    "conception": "Conception",
+    "title": "My Andragogue profile",
+    "titleDescription": "Me in a hundred characters",
+    "titleExperience": "My experience as an Andragogue",
+    "titleRates": "Hourly rate",
+    "titleSkills": "Skills"
+  },
+  "myManagerProfile": {
+    "title": "My manager profile"
+  },
+  "myLearnerProfile": {
+    "appropriateTimes": "Appropriate times",
+    "idealDurations": "Ideal durations",
+    "preferredDevices": "Preferred devices",
+    "preferredModalities": "Preferred modalities",
+    "title": "My learner profile",
+    "titleInterests": "Interests",
+    "titleSettings": "My training preferences",
+    "settings": {
+      "afternoon": "[TODO] Afternoon (14:00 to 18:00)",
+      "evening": "[TODO] Evening (18:00 to 00:00)",
+      "less15Min": "[TODO] Less than or equal to 15 minutes",
+      "less1Hour": "[TODO] Less than or equal to 1 hour",
+      "less3Hours": "[TODO] Less than or equal to 3 hours",
+      "less1Day": "[TODO] Less than or equal to 1 day",
+      "less1Week": "[TODO] Less than or equal to 1 week",
+      "less1Month": "[TODO] Less than or equal to 1 month",
+      "midday": "[TODO] Lunch (12:00 to 14:00)",
+      "mondayToFriday": "[TODO] Monday to Friday",
+      "more1Month": "[TODO] More than 1 month",
+      "morning": "[TODO] Morning (07:00 to 12:00)",
+      "night": "[TODO] Night (00:00 to 07:00)",
+      "satSunHolidays": "[TODO] Saturday, Sunday and holidays"
+    }
+  }
+}

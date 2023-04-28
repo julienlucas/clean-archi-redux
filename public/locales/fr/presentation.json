@@ -1,0 +1,70 @@
+{
+  "general": {
+    "tabTitle": "Présentation - {{trainingTitle}}",
+    "pageTitle": "Présentation",
+    "modulesTitle": "Détail des modules",
+    "userKPIs": "En quelques chiffres",
+    "testimonyTitle": "Témoignages",
+    "catalogueTitle": "Du même andragogue",
+    "publication": {
+      "catalog": {
+        "carouselTitle": "Catalogue",
+        "carouselViewAll": "Tout voir"
+      }
+    },
+    "nav_bar": {
+      "presentation": "Présentation",
+      "modules_details": "Détails des modules",
+      "user_kpis": "En quelques chiffres",
+      "testimonials": "Témoignages",
+      "catalog": "Catalogue"
+    }
+  },
+  "modules_details": {
+    "fetch_error_title": "Une erreur est survenue lors de la récupération des détails des modules",
+    "fetch_error_subtitle": "Veuillez réessayer plus tard.",
+    "session_one": "{{count}} session",
+    "session_other": "{{count}} sessions",
+    "activity_one": "{{count}} activité",
+    "activity_other": "{{count}} activités"
+  },
+  "header": {
+    "by": "Par <0>{{author}}</0>",
+    "currency_suffix": "{{amount}} {{currency}}",
+    "certification_badge": "Formation certifiante",
+    "cta_button": "Suivre la formation"
+  },
+  "training_infos": {
+    "associates": "Associé·e·s",
+    "author_details": "Voir le profil",
+    "courses_one": "{{count}} Formation",
+    "courses_other": "{{count}} Formations",
+    "users_one": "{{count}} Utilisateur",
+    "users_other": "{{count}} Utilisateurs",
+    "followers_one": "Suivi par {{count}} personne",
+    "followers_other": "Suivi par {{count}} personnes",
+    "recommendations_one": "{{count}} recommandation",
+    "recommendations_other": "{{count}} recommandations"
+  },
+  "publication_content": {
+    "skills": "Compétences visées",
+    "description": "Description de la formation",
+    "objectives": "Objectifs de la formation",
+    "profils": "Profil·s",
+    "qualifications": "Qualifications",
+    "prerequisites": "Prérequis"
+  },
+  "training_meta": {
+    "certification": "Certification",
+    "modules": {
+      "presential": "Présentiel",
+      "virtual_classroom": "Classe virtuelle",
+      "e_learning": "E-learning",
+      "micro_learning": "Micro-learning",
+      "modules_count_one": "{{count}} module",
+      "modules_count_other": "{{count}} modules",
+      "beginDate": "Du",
+      "endDate": "au"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+query allTrainings {
+  allTrainings {
+    id
+    state
+    title
+    author {
+      id
+      profile {
+        id
+      }
+    }
+    modalities
+    thumbnail {
+      path
+    }
+    modules {
+      ... on LoadableSessionModule {
+        id
+        totalDuration
+      }
+      ... on LoadableActivityModule {
+        id
+        totalDuration
+      }
+    }
+  }
+}

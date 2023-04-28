@@ -1,0 +1,90 @@
+{
+  "landing": {
+    "title": "Andragog - Home",
+    "landingPage": "Landing page"
+  },
+  "404": {
+    "goToMainPage": "Go to main page",
+    "pageNotFound": "Page Not Found"
+  },
+  "actions": {
+    "delete": "Delete",
+    "duplicate": "Duplicate",
+    "loading": "Loading...",
+    "preview": "Preview",
+    "share": "Share",
+    "showDetails": "Show details",
+    "signIn": "Sign in",
+    "start": "Start"
+  },
+  "common": {
+    "maxItemReached": "Maximum added"
+  },
+  "richText": {
+    "addDefinition": "Add a definition",
+    "boldLabel": "bold",
+    "bulletListLabel": "bullet list",
+    "definitionFor": "Definition for",
+    "definitionLabel": "definition",
+    "delete": "Delete",
+    "editDefinitionHeader": "Definition for",
+    "editLinkHeader": "Edit Link",
+    "highlightLabel": "highlight",
+    "italicLabel": "italic",
+    "linkError": "Please enter a valid URL. \n Valid URL example :  https://www.youtube.com/watch?v=E3jZDFUfW7",
+    "linkHeader": "Add link",
+    "linkHint": "Example :  https://www.youtube.com/watch?v=E3jZDFUfW7",
+    "linkLabel": "Link text",
+    "linkPlaceholder": "URL of the link",
+    "or": "or",
+    "orderedListLabel": "ordered list",
+    "save": "Save",
+    "strikeLabel": "strike",
+    "submitLink": "Add link",
+    "underlineLabel": "underline",
+    "urlLabel": "Link"
+  },
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "errors": {
+    "unexpected": "An unexpected error has occurred.",
+    "valueMaxLength": "Maxi {{maxLength}} characters",
+    "valueMinLength": "Mini {{minLength}} characters"
+  },
+  "sessionState": {
+    "UNPUBLISHED": "Session Unpublished",
+    "PENDING": "Session Pending",
+    "SCHEDULED": "Session Scheduled",
+    "CONFIRMED": "Session Confirmed",
+    "CLOSED": "Registration closed",
+    "DONE": "Session Done",
+    "CANCELED": "Session Canceled"
+  },
+  "training_modules": {
+    "E_LEARNING": "E-learning",
+    "PRESENTIAL": "Presential",
+    "VIRTUAL_CLASSROOM": "Virtual classroom",
+    "MICRO_LEARNING": "Microlearning"
+  },
+  "AgTrainingGlobalInformationsCard": {
+    "title": "Global informations",
+    "multimodale": "Multimodal",
+    "totalDuration": "Total duration <0> {{duration}}</0>",
+    "lang": {
+      "FRENCH": "French",
+      "ENGLISH": "English"
+    },
+    "accessibility": "All public"
+  },
+  "months": {
+    "longhand": "January February March April May June July July August September October November December",
+    "shorthand": "Jan. Feb. Mar. Apr. May Jun. Jul. Aug. Sep. Oct. Nov. Dec."
+  }
+}

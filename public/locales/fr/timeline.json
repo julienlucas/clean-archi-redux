@@ -1,0 +1,17 @@
+{
+  "activateModality": "Activer",
+  "activities": "Activité·s",
+  "deleteModuleAlert": {
+    "body": "Confirmez vous la suppression ?",
+    "cancel": "Annuler",
+    "confirm": "Supprimer",
+    "title": "Confirmez vous la suppression",
+    "subTitle": "Le module et l’ensemble de ses activités seront définitivement supprimées."
+  },
+  "elearning": "E-learning",
+  "faceToFace": "Présentiel",
+  "microlearning": "Microlearning",
+  "virtualClassroom": "Classe virtuelle",
+  "session": "Session⸱s",
+  "module": "Module⸱s"
+}

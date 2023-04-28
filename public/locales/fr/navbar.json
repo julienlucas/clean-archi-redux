@@ -1,0 +1,38 @@
+{
+  "tooltipLabels": {
+    "dashboard": "Journal",
+    "planning": "Calendrier",
+    "production": "Production",
+    "configuration": "Configuration",
+    "timeline": "Timeline",
+    "publication": "Publication",
+    "collaboration": "Collaboration",
+    "my-trainings": "Cursus",
+    "catalog": "Formathèque",
+    "search": "Recherche",
+    "teams": "Équipes",
+    "learners": "Apprenants",
+    "messages": "Messagerie",
+    "E_LEARNING": "E-learning",
+    "PRESENTIAL": "Présentiel",
+    "VIRTUAL_CLASSROOM": "Classe virtuelle",
+    "MICRO_LEARNING": "Microlearning"
+  },
+  "menu": {
+    "profile": "Mon profil",
+    "account": "Mon compte",
+    "help": "Aide",
+    "language": "Langue",
+    "signin": "Connexion",
+    "signout": "Déconnexion"
+  },
+  "ariaLabels": {
+    "mail": "Messagerie",
+    "preview": "Aperçu",
+    "back": "Retour"
+  },
+  "collaborate": "Collaborer",
+  "addCollab": "Ajouter des collaborateurs",
+  "cancel": "Annuler",
+  "validate": "Valider"
+}

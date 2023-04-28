@@ -1,0 +1,104 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["unused-imports"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allowCircularSelfDependency": true,
+            "depConstraints": [
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
+              },
+              {
+                "sourceTag": "scope:server",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:server"]
+              },
+              {
+                "sourceTag": "scope:client",
+                "onlyDependOnLibsWithTags": ["scope:shared", "scope:client"]
+              },
+              {
+                "sourceTag": "kind:application",
+                "onlyDependOnLibsWithTags": [
+                  "kind:library:feature",
+                  "kind:library:ui",
+                  "kind:library:data-access",
+                  "kind:library:types",
+                  "kind:library:utility"
+                ]
+              },
+              {
+                "sourceTag": "kind:library:feature",
+                "onlyDependOnLibsWithTags": [
+                  "kind:library:feature",
+                  "kind:library:ui",
+                  "kind:library:utility",
+                  "kind:library:data-access",
+                  "kind:library:configuration",
+                  "kind:library:types"
+                ]
+              },
+              {
+                "sourceTag": "kind:library:ui",
+                "onlyDependOnLibsWithTags": [
+                  "kind:library:ui",
+                  "kind:library:utility",
+                  "kind:library:data-access",
+                  "kind:library:configuration",
+                  "kind:library:types"
+                ]
+              },
+              {
+                "sourceTag": "kind:library:utility",
+                "onlyDependOnLibsWithTags": [
+                  "kind:library:utility",
+                  "kind:library:configuration",
+                  "kind:library:types"
+                ]
+              },
+              {
+                "sourceTag": "kind:library:data-access",
+                "onlyDependOnLibsWithTags": [
+                  "kind:library:utility",
+                  "kind:library:data-access",
+                  "kind:library:configuration",
+                  "kind:library:types"
+                ]
+              },
+              {
+                "sourceTag": "kind:library:configuration",
+                "onlyDependOnLibsWithTags": [
+                  "kind:library:utility",
+                  "kind:library:configuration",
+                  "kind:library:types"
+                ]
+              },
+              {
+                "sourceTag": "kind:library:types",
+                "onlyDependOnLibsWithTags": ["kind:library:types"]
+              }
+            ]
+          }
+        ],
+        "no-unused-vars": "error",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+          "error",
+          {
+            "vars": "all",
+            "varsIgnorePattern": "^_",
+            "args": "after-used",
+            "argsIgnorePattern": "^_"
+          }
+        ]
+      }
+    }
+  ]
+}

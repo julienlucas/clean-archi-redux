@@ -1,0 +1,29 @@
+{
+  "generic": {
+    "required": "This field is required.",
+    "invalid": "This field has an invalid value."
+  },
+  "string": {
+    "min_one": "This field must be at least {{count}} character long.",
+    "min_other": "This field must be at least {{count}} characters long.",
+    "max": "This field must be at most {{count}} characters long."
+  },
+  "file": {
+    "fileType": "Unsupported filetype, please upload a different file."
+  },
+  "collection": {
+    "min_one": "This field must have at least {{count}} item.",
+    "min_other": "This field must have at least {{count}} items.",
+    "max": "This field must have at most {{count}} items."
+  },
+  "name": {
+    "name_required": "Name is required",
+    "name_min": "Minimum {{num}} characters",
+    "name_max": "Maximum {{num}} characters"
+  },
+  "description": {
+    "description_required": "Description is required",
+    "description_min": "The description should be at least {{num}} characters long",
+    "description_max": "Maximum description length is {{num}} characters"
+  }
+}

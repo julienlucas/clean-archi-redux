@@ -1,0 +1,38 @@
+{
+  "tooltipLabels": {
+    "dashboard": "Dashboard",
+    "planning": "Planning",
+    "production": "Production",
+    "configuration": "Configuration",
+    "timeline": "Timeline",
+    "publication": "Publication",
+    "collaboration": "Collaboration",
+    "my-trainings": "Curriculum",
+    "catalog": "Catalog",
+    "search": "Search",
+    "teams": "Teams",
+    "learners": "Learners",
+    "messages": "Messages",
+    "E_LEARNING": "E-learning",
+    "PRESENTIAL": "Face-to-face",
+    "VIRTUAL_CLASSROOM": "Virtual classroom",
+    "MICRO_LEARNING": "Microlearning"
+  },
+  "menu": {
+    "profile": "My profile",
+    "account": "My settings",
+    "help": "Help",
+    "language": "Language",
+    "signin": "Sign in",
+    "signout": "Sign out"
+  },
+  "ariaLabels": {
+    "mail": "Mail",
+    "preview": "Preview",
+    "back": "Back"
+  },
+  "collaborate": "Collaborate",
+  "addCollab": "Add collaborators",
+  "cancel": "Cancel",
+  "validate": "Done"
+}

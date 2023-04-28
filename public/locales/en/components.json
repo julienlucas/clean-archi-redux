@@ -1,0 +1,49 @@
+{
+  "switch": {
+    "no": "No",
+    "yes": "Yes"
+  },
+  "autocomplete": {
+    "defaultActionLabel": "Add",
+    "loading": "Loading...",
+    "placeholder": "Add",
+    "toggleList": "Toggle list",
+    "unRegisteredUser": "Unregistered user"
+  },
+  "bannerUploader": {
+    "guideline": "JPG or PNG up to 5MB, 1920x1080"
+  },
+  "cookies": {
+    "accept": "Authorise",
+    "cookiesSettings": "Cookies parameters",
+    "readMore": "Know more",
+    "siteUsesCookies": "This site uses cookies."
+  },
+  "upload": {
+    "dragnDropType": "Drag and drop your {{type}} here",
+    "dragnDropMedia": "Drag and drop your media here",
+    "dropType": "Drop your {{type}} here to upload",
+    "dropMedia": "Drop your media here to upload",
+    "or": "OR",
+    "browse": "Browse",
+    "embeddedVideo": "Embedded video",
+    "embeddedVideoPlaceholder": "Video URL, ex : http://mavideo.com/",
+    "upTo": "up to",
+    "quantityNotAccepted_one": "File quantity is not accepted!",
+    "quantityNotAccepted_other": "Files quantity is not accepted!",
+    "maximumQuantity_one": "Maximum file quantity accepted for upload: {{maxQuantity}}",
+    "maximumQuantity_other": "Maximum files quantity accepted for upload: {{maxQuantity}}",
+    "formatNotAccepted": "File format is not accepted!",
+    "formatForUpload": "File format accepted for upload: {{accept}}",
+    "sizesNotAccepted_one": "File size is not accepted!",
+    "sizesNotAccepted_other": "File sizes are not accepted!",
+    "sizeError": "Maximum file size accepted for upload: {{maxSize}}MB",
+    "maxTotalSizeError": "Maximum total files size accepted for upload: {{maxTotalSize}}MB",
+    "resolutionNotAccepted_one": "File resolution is not accepted!",
+    "resolutionNotAccepted_other": "Files resolution is not accepted!",
+    "widthError": "Width between {{min}}px and {{max}}px accepted for upload",
+    "heightError": "Height between {{min}}px and {{max}}px accepted for upload",
+    "uploadErrorTitle": "Error during upload",
+    "uploadErrorDescription": "An error occurred during upload, please try again later"
+  }
+}

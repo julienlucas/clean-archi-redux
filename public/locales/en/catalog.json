@@ -1,0 +1,48 @@
+{
+  "general": {
+    "title": "Courses",
+    "publication": {
+      "sectionTitle": "Courses",
+      "dropdownTrainingsOptions": {
+        "all": "Seel all",
+        "recommanded": "Recommandations",
+        "new": "New trainings",
+        "liked": "Appreciated on Andragog",
+        "favorites": "Favorites"
+      },
+      "dropdownThematicsOptions": {
+        "all": "All thematics"
+      },
+      "recommandations": {
+        "carouselTitle": "Recommandation\u00B7s",
+        "carouselViewAll": "See all"
+      },
+      "newsTraining": {
+        "carouselTitle": "All new",
+        "carouselViewAll": "See all"
+      },
+      "likesTrainings": {
+        "carouselTitle": "Appreciated on Andragog",
+        "carouselViewAll": "See all"
+      },
+      "favoritesTrainings": {
+        "carouselTitle": "Favorite\u00B7s",
+        "carouselViewAll": "See all"
+      }
+    },
+    "publicationGrid": {
+      "LoadMoreButton": "Load more",
+      "noMoreTrainings": "No additional trainings"
+    },
+    "KPI": {
+      "activityBarometer": "In some numbers",
+      "dropdown": {
+        "audience": "Audience",
+        "results": "Results",
+        "modalities": "Modalities",
+        "moreOptions": "More options"
+      },
+      "title": "KPI Global"
+    }
+  }
+}

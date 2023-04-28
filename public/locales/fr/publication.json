@@ -1,0 +1,56 @@
+{
+  "tabTitle": "Publication - {{trainingTitle}}",
+  "pageTitle": "Publication",
+  "notice": "Voir la fiche",
+  "certificate": "Certification",
+  "price": "Tarification",
+  "defineUnitPurchase": "Définir le montant d’achat unitaire de la formation.",
+  "version": "Version {{version}}",
+  "learners": "{{learners}} Apprenant·e·s actif·ve·s",
+  "collaborators": "Intervenant·e·s",
+  "publish_button": "Publier",
+  "archive_button": "Archiver",
+  "lang": {
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "conception": {
+    "published": "Publié",
+    "archived": "Archivé",
+    "concept": "Conception"
+  },
+  "changePublishStatus": {
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "title": "Confirmez-vous la publication ?",
+    "subTitle": "La formation sera visible dans le catalogue Andragog."
+  },
+  "deadline": {
+    "deadline": "Échéance",
+    "days": "Jour·s",
+    "fill": "Renseigner la période d’accessibilité à ce parcours de formation après l’acte d’achat (jusqu’à 730 jours)."
+  },
+  "communication": {
+    "communication": "Communication",
+    "yes": "Oui",
+    "no": "Non",
+    "previewNewsletter": "Voir la newsletter",
+    "inform": "Informer votre réseau de cette nouvelle publication par une campagne d’e-mailing ?"
+  },
+  "sales": {
+    "sales": "Promotion·s",
+    "addOffer": "Ajouter une offre par volume",
+    "applyDecreasingLevels": "Appliquer des paliers dégressifs en fonction du volume d’achat unique (> 20%).",
+    "email": "contact@andragog.com",
+    "contact": "(toute autre demande)"
+  },
+  "debit": {
+    "debit": "Prélèvement",
+    "price": "Tarif de la formation",
+    "upTo9": "Jusqu’à 9 apprenants",
+    "from10": "De 10 à 49 apprenants",
+    "from50": "De 50 à 199 apprenants",
+    "from200": "200 et plus apprenants",
+    "remuneration": "Andragog se rémunère sur les ventes et la performance de ses andragogues : se référer au tableau ci-dessus"
+  }
+}

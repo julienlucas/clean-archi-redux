@@ -1,0 +1,1010 @@
+scalar Date
+scalar LocalTime
+
+enum ActivityType {
+  MCQ
+  MCQ_IMAGE
+  MCQ_AUDIO
+  IMAGE_AND_TEXT
+  DOCUMENT
+  VIDEO
+  TEXT
+  SORTING
+  MATCHING
+  ADAPTIVE_CARDS
+  HOT_SPOT
+  HOT_SPOT_QUESTION
+  LOGO
+  INDICATION
+}
+
+enum Disability {
+  HARD_OF_HEARING
+  VISUALLY_IMPAIRED
+  COLORBLIND
+  HARD_OF_HEARING_VISUALLY_IMPAIRED
+}
+
+enum Language {
+  ENGLISH
+  FRENCH
+}
+
+enum Modality {
+  E_LEARNING
+  PRESENTIAL
+  VIRTUAL_CLASSROOM
+  M0ICRO_LEARNING
+}
+
+enum ScreenSize {
+  DESKTOP
+  TABLET
+  MOBILE
+}
+
+enum TrainingState {
+  CONCEPT
+  PUBLISHED
+  ARCHIVED
+}
+
+type Organization {
+  createdAt: String!
+  id: Int!
+  name: String!
+}
+
+type LoadableUserAccount {
+  firstname: String!
+  id: Int!
+  lastname: String!
+  recap: String!
+  email: String
+}
+
+type LoadableAndragogueProfile {
+  id: Int!
+  profile: LoadableUserAccount!
+}
+
+type Objective {
+  order: Int!
+  value: String!
+  training: Training!
+}
+
+type Prerequisite {
+  order: Int!
+  value: String!
+  trainings: Training!
+}
+
+type Qualification {
+  title: String!
+  organization: Organization
+  trainings: [Training!]!
+}
+
+type Thumbnail {
+  miniatureXPosition: Float
+  miniatureYPosition: Float
+  miniatureZoom: Float
+  path: String!
+  xPosition: Float
+  yPosition: Float
+  zoom: Float
+  training: Training!
+}
+
+type Skill {
+  name: String!
+  organization: Organization
+  trainings: [Training!]!
+}
+
+type Target {
+  title: String!
+  organization: Organization
+  trainings: [Training!]!
+}
+
+type Theme {
+  activityTypes: [ActivityType!]!
+  author: String!
+  bundle: String!
+  colorSchemes: String!
+  dateOfCreation: String!
+  devices: [ScreenSize!]!
+  disabilities: [Disability!]!
+  fonts: [String!]!
+  id: String!
+  is3d: Boolean!
+  isAdaptiveLearning: Boolean!
+  name: String!
+  previewImage: String!
+  version: String!
+  viewMode: String!
+}
+
+type UserAvailableList {
+  disabilities: [String!]!
+  qualifications: [Qualification!]!
+  skills: [Skill!]!
+  targets: [Target!]!
+}
+
+type Training {
+  id: Int!
+  adaptiveLearning: Boolean!
+  colorScheme: Int!
+  createdAt: String!
+  description: String!
+  disabilities: [Disability!]!
+  language: Language!
+  modalities: [Modality!]!
+  screenSizes: [ScreenSize!]!
+  targets: [Target!]!
+  state: TrainingState!
+  title: String!
+  author: LoadableAndragogueProfile!
+  modules: [LoadableModule!]!
+  objectives: [Objective!]!
+  prerequisites: [Prerequisite!]!
+  qualifications: [Qualification!]!
+  skills: [Skill!]!
+  thumbnail: Thumbnail!
+  theme: Theme!
+}
+
+enum Modality {
+  E_LEARNING
+  PRESENTIAL
+  VIRTUAL_CLASSROOM
+  MICRO_LEARNING
+}
+
+enum ModuleStatus {
+  CONCEPT
+  ACTIVE
+}
+
+enum SessionType {
+  UNPUBLISHED
+  PENDING
+  SCHEDULED
+  CONFIRMED
+  CLOSED
+  DONE
+  CANCELED
+}
+
+enum SlotCoachInviteStatus {
+  SAVED
+  PENDING
+  ACCEPTED
+  REFUSED
+}
+
+enum SlotCoachType {
+  EXTERNAL
+  INTERNAL
+}
+
+type LoadableSlot {
+  date: Date!
+  description: String!
+  finish: LocalTime!
+  id: Int!
+  info: String!
+  start: LocalTime!
+  title: String!
+  invites: [LoadableSlotInvite!]!
+  session: LoadableSession!
+}
+
+type LoadableSlotInvite {
+  id: Int!
+  status: SlotCoachInviteStatus!
+  type: SlotCoachType!
+  slot: LoadableSlot!
+  id: Int!
+  info: String!
+  start: LocalTime!
+  title: String!
+  invites: [LoadableSlotInvite!]!
+  session: LoadableSession!
+}
+
+type LoadableSlotInvite {
+  id: Int!
+  status: SlotCoachInviteStatus!
+  type: SlotCoachType!
+  slot: LoadableSlot!
+  coach: LoadableAndragogueProfile!
+}
+
+type LoadableSession {
+  begin: Date!
+  end: Date!
+  id: Int!
+  maximum: Int!
+  minimum: Int!
+  title: String!
+  type: SessionType!
+  zoneId: String!
+  slots: [LoadableSlot!]!
+}
+
+interface LoadableActivity {
+  computedDuration: Int
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableAssetUpload {
+  id: Int!
+  mediaType: String!
+  uploadedAt: String!
+  downloadUrl: String
+}
+
+type LoadableAsset {
+  createdAt: String!
+  fileName: String!
+  id: Int!
+  originalName: String!
+  assetUpload: LoadableAssetUpload
+  training: Training
+}
+
+type Files {
+  a11y: String
+  config: String
+  fileSize: Int!
+  fileType: String!
+  filename: String!
+  src: String
+  type: String!
+}
+
+type General {
+  accessibilityText: String
+  audio: AudioMedia
+  embededVideo: String
+  feedback: String
+  image: GraphicMedia
+  text: String!
+  title: String!
+  video: VideoMedia
+}
+
+type LoadableActivityAdaptiveCard implements LoadableActivity {
+  computedDuration: Int
+  content: AdaptiveCards!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityDocument implements LoadableActivity {
+  computedDuration: Int
+  content: Document!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityGeneral implements LoadableActivity {
+  computedDuration: Int
+  content: General!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityDocument implements LoadableActivity {
+  computedDuration: Int
+  content: Document!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityGeneral implements LoadableActivity {
+  computedDuration: Int
+  content: General!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityHotpost implements LoadableActivity {
+  computedDuration: Int
+  content: Hotpost!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityHotpostResponseQuiz implements LoadableActivity {
+  computedDuration: Int
+  content: HotpostResponseQuiz!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityImage implements LoadableActivity {
+  computedDuration: Int
+  content: Image!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityIndication implements LoadableActivity {
+  computedDuration: Int
+  content: Indication!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityMQCImage implements LoadableActivity {
+  computedDuration: Int
+  content: PictureQuiz!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityMatching implements LoadableActivity {
+  computedDuration: Int
+  content: Matching!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityMcqAudio implements LoadableActivity {
+  computedDuration: Int
+  content: AudioQuiz!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityMqc implements LoadableActivity {
+  computedDuration: Int
+  content: TextQuiz!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivitySorting implements LoadableActivity {
+  computedDuration: Int
+  content: Sorting!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityTabs implements LoadableActivity {
+  computedDuration: Int
+  content: Tabs!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityText implements LoadableActivity {
+  computedDuration: Int
+  content: Text!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityTextWithImage implements LoadableActivity {
+  computedDuration: Int
+  content: TextWithGraphicMedia!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityTitle implements LoadableActivity {
+  computedDuration: Int
+  content: TitleRoot!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableActivityVideo implements LoadableActivity {
+  computedDuration: Int
+  content: VideoMedia!
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type LoadableSession {
+  begin: Date!
+  end: Date!
+  id: Int!
+  maximum: Int!
+  minimum: Int!
+  title: String!
+  type: SessionType!
+  zoneId: String!
+  status: ModuleStatus!
+}
+
+type LoadableActivityModule {
+  author: String!
+  id: Int!
+  totalDuration: Int!
+  modality: Modality!
+  name: String!
+  position: Int!
+  status: ModuleStatus!
+  activities: [LoadableActivity!]!
+  activeActivities: Int!
+  conceptActivities: Int!
+}
+
+type LoadableSessionModule {
+  author: String!
+  totalDuration: Int!
+  limitDuration: Int!
+  id: Int!
+  modality: Modality!
+  name: String!
+  description: String!
+  position: Int!
+  status: ModuleStatus!
+  sessions: [LoadableSession!]!
+}
+
+union LoadableModule = LoadableActivityModule | LoadableSessionModule
+
+enum ActivityStatus {
+  CONCEPT
+  ACTIVE
+}
+
+enum ActivityType {
+  MCQ
+  MCQ_IMAGE
+  MCQ_AUDIO
+  IMAGE_AND_TEXT
+  DOCUMENT
+  VIDEO
+  TEXT
+  SORTING
+  MATCHING
+  ADAPTIVE_CARDS
+  HOT_SPOT
+  HOT_SPOT_QUESTION
+  LOGO
+  INDICATION
+  Tabs
+  General
+  Title
+}
+
+type AdaptiveCardContent {
+  correctAnswer: Int!
+  items: [AdaptiveCardResponse!]!
+  title: String!
+}
+
+type AudioMedia {
+  a11y: String
+  config: String
+  fileSize: Int
+  fileType: String!
+  filename: String!
+  src: String
+  type: String!
+}
+
+type CropArea {
+  height: Int!
+  width: Int!
+  x: Int!
+  y: Int!
+}
+
+type CropPosition {
+  x: Int!
+  y: Int!
+}
+
+type GraphicMedia {
+  a11y: String
+  config: String
+  cropArea: CropArea
+  cropPosition: CropPosition
+  fileSize: Int
+  fileType: String!
+  filename: String!
+  resolutionHeight: Int
+  resolutionWidth: Int
+  src: String
+  type: String!
+  zoom: Float
+}
+
+type AdaptiveCardResponse {
+  audio: AudioMedia
+  graphic: GraphicMedia
+  text: String!
+}
+
+type AdaptiveCards {
+  computedDuration: Int!
+  items: [AdaptiveCardContent!]!
+  title: String!
+  userDuration: Int!
+}
+
+type AudioQuiz {
+  computedDuration: Int!
+  items: [AudioResponse!]!
+  question: String!
+  timer: Boolean
+  timerDuration: Int
+  userDuration: Int!
+}
+
+type Document {
+  computedDuration: Int!
+  files: [Files!]!
+  text: String
+  title: String
+  totalSize: Int!
+  userDuration: Int!
+}
+
+type ResponseSorting {
+  audio: AudioMedia
+  computedDuration: Int!
+  graphic: GraphicMedia
+  index: Int!
+  itemType: String!
+  text: String!
+  userDuration: Int!
+}
+
+type Hotpost {
+  computedDuration: Int!
+  graphic: GraphicMedia
+  items: [HotpostResponse!]!
+  title: String!
+  userDuration: Int!
+}
+type HotpostResponse {
+  body: String!
+  computedDuration: Int!
+  feedback: String
+  media: Media
+  name: String!
+  position: Position!
+  userDuration: Int!
+}
+
+type PictureQuiz {
+  computedDuration: Int!
+  display: String
+  items: [PictureResponse]!
+  question: String!
+  timer: Boolean
+  timerDuration: Int
+  userDuration: Int!
+}
+
+type Sorting {
+  computedDuration: Int!
+  items: [ResponseSorting!]!
+  userDuration: Int!
+}
+
+type Matching {
+  computedDuration: Int!
+  items: [MatchingResponse!]!
+  timer: Boolean!
+  timerDuration: Int!
+  userDuration: Int!
+}
+
+type DefinitionIndication {
+  body: String!
+  id: String!
+  media: Media
+  title: String!
+}
+
+type Part {
+  definitions: [DefinitionIndication!]!
+  itemType: String!
+  media: Media
+  text: String!
+}
+
+type Indication {
+  afterAnswer: Part!
+  beforeAnswer: Part!
+  computedDuration: Int!
+  media: Media!
+  question: String!
+  questions: [TextQuiz!]!
+  text: String!
+  title: String!
+  userDuration: Int!
+}
+
+type Image {
+  a11y: String
+  config: String
+  fileSize: Int!
+  fileType: String!
+  filename: String!
+  resolutionHeight: Int!
+  resolutionWidth: Int!
+  src: String
+  type: String!
+}
+
+type Position {
+  x: Int!
+  y: Int!
+}
+
+type Files {
+  a11y: String
+  config: String
+  fileSize: Int!
+  fileType: String!
+  filename: String!
+  src: String
+  type: String!
+}
+
+type HotpostResponseQuiz {
+  body: String!
+  computedDuration: Int!
+  feedback: String
+  isCorrect: Boolean!
+  media: Media
+  name: String!
+  position: Position!
+  userDuration: Int!
+}
+
+type MatchingResponse {
+  audio: AudioMedia
+  computedDuration: Int!
+  feedback: String
+  image: GraphicMedia
+  title: String!
+  userDuration: Int!
+}
+
+type PictureResponse {
+  computedDuration: Int!
+  feedback: String
+  isCorrect: Boolean!
+  media: GraphicMedia!
+  userDuration: Int!
+}
+
+type GraphicMedia {
+  a11y: String
+  config: String
+  fileSize: Int
+  fileType: String!
+  filename: String!
+  resolutionHeight: Int
+  resolutionWidth: Int
+  src: String
+  type: String!
+}
+
+type VideoMedia {
+  a11y: String
+  config: String
+  fileSize: Int!
+  fileType: String!
+  filename: String!
+  src: String
+  type: String!
+  videoDuration: Int
+}
+
+type Title {
+  computedDuration: Int!
+  title: String!
+  userDuration: Int!
+}
+
+type Definition {
+  body: String!
+  id: String!
+  media: Media
+  title: String!
+}
+
+type Media {
+  a11y: String
+  config: String
+  fileSize: Int!
+  fileType: String!
+  filename: String!
+  src: String
+  type: String!
+}
+
+type AudioResponse {
+  computedDuration: Int!
+  feedback: String
+  isCorrect: Boolean!
+  media: AudioMedia!
+  userDuration: Int!
+}
+
+type AudioMedia {
+  a11y: String
+  config: String
+  fileSize: Int
+  fileType: String!
+  filename: String!
+  src: String
+  type: String!
+}
+
+type TextWithGraphicMedia {
+  body: String!
+  computedDuration: Int!
+  definitions: [Definition!]!
+  display: String!
+  textPosition: String!
+  title: String!
+  userDuration: Int!
+}
+
+type Tabs {
+  computedDuration: Int!
+  description: String
+  tabs: [TabSection!]!
+  title: String!
+  userDuration: Int!
+}
+
+type TabSection {
+  computedDuration: Int!
+  description: String!
+  media: GraphicMedia
+  title: String!
+  userDuration: Int!
+}
+
+type Text {
+  body: String!
+  computedDuration: Int!
+  title: String!
+  userDuration: Int!
+}
+
+type TextResponse {
+  computedDuration: Int!
+  feedback: String
+  isCorrect: Boolean!
+  response: String!
+  userDuration: Int!
+}
+
+type TextQuiz {
+  computedDuration: Int!
+  feedback: String
+  isCorrect: Boolean!
+  items: [TextResponse!]!
+  question: String!
+  timer: Boolean
+  timerDuration: Int
+  userDuration: Int!
+}
+
+interface LoadableActivity {
+  computedDuration: Int
+  hearingImpaired: Boolean!
+  id: Int!
+  status: ActivityStatus!
+  type: ActivityType!
+  userDuration: Int
+  visionImpaired: Boolean!
+}
+
+type Query {
+  getTraining(id: Int!): Training
+  myTrainings: [Training]
+  allTrainings: [Training!]!
+  availableLists: UserAvailableList!
+  getModule(moduleId: Int!): LoadableModule
+  getModules(id: Int!): LoadableModule
+  getSession(id: Int!): LoadableSession!
+  availableCoaches(slotId: Int!): [LoadableAndragogueProfile!]!
+  getSlot(id: Int!): LoadableSlot!
+  isCoachAvailable(andragogueProfileId: Int!, slotId: Int!): Boolean!
+  availableCoaches(
+  slotId: Int!
+  ): [LoadableAndragogueProfile!]!
+  getActivity(activityId: Int!): LoadableActivity!
+  getAsset(filename: String!): LoadableAsset!
+}
+
+type Mutation {
+  updateTraining(
+    trainingId: Int!
+    title: String
+    description: String
+    adaptiveLearning: Boolean
+    language: Language
+    modalities: [Modality!]
+    screenSizes: [ScreenSize!]
+    disabilities: [Disability!]
+    themeId: String
+    colorScheme: Int
+    prerequisite: [String!]
+    objectives: [String!]
+    skills: [String!]
+    qualifications: [String!]
+    targets: [String!]
+  ): Training!
+  archiveTraining(trainingId: Int!): Training!
+  publishTraining(trainingId: Int!): Training!
+  createTraining(title: String!): Training!
+  deleteTraining(trainingId: Int!): Boolean!
+  addColumn(trainingId: Int!, position: Int!): Boolean!
+  deleteColumn(trainingId: Int!, position: Int!): Boolean!
+  createModule(
+    trainingId: Int!
+    modality: Modality!
+    position: Int!
+  ): LoadableModule!
+  deleteModule(moduleId: Int!): Boolean!
+  disableModule(moduleId: Int!): LoadableModule
+  enableModule(moduleId: Int!): LoadableModule
+  setModulePosition(moduleId: Int!, toPosition: Int!): LoadableModule!
+  updateModuleFields(moduleId: Int!, name: String, duration: Int, limitDuration: Int, description: String): LoadableModule!
+  createSlot(
+    sessionId: Int!
+    title: String!
+    info: String!
+    description: String!
+    date: Date!
+    start: LocalTime!
+    finish: LocalTime!
+  ): LoadableSlot!
+  inviteCoach(slotId: Int!, andragogueId: Int!): LoadableSlotInvite!
+  deleteSlot(slotId: Int!): Boolean!
+  inviteCoach(
+    slotId: Int!
+    andragogueId: Int!
+  ): LoadableSlotInvite!
+  deleteInvite(inviteId: Int!): Boolean!
+  updateSlot(
+    slotId: Int!
+    title: String
+    info: String
+    description: String
+    date: Date
+    start: LocalTime
+    finish: LocalTime
+  ): LoadableSlot!
+  createSession(
+    moduleId: Int!
+    title: String!
+    zoneId: String!
+    begin: Date!
+    end: Date!
+    minimum: Int!
+    maximum: Int!
+  ): LoadableSession!
+  deleteSession(sessionId: Int!): Boolean!
+  duplicateSession(sessionId: Int!): LoadableSession!
+  updateSession(
+    sessionId: Int!
+    title: String
+    zoneId: String
+    begin: Date
+    end: Date
+    minimum: Int
+    maximum: Int
+  ): LoadableSession!
+  publishSession(sessionId: Int!): LoadableSession!
+  closeSession(sessionId: Int!): LoadableSession!
+  createActivity(
+    activityId: Int!
+    activityInput: LoadableActivity!
+  ): LoadableActivity!
+  updateActivity(
+    activityId: Int!
+    activityInput: LoadableActivity!
+  ): LoadableActivity!
+  reorderActivityAfter(
+    refId: Int!
+    toMoveId: Int!
+  ): Boolean!
+  reorderActivityBefore(
+    refId: Int!
+    toMoveId: Int!
+  ): Boolean!
+  removeActivity(
+    activityId: Int!,
+  ): Boolean!
+}

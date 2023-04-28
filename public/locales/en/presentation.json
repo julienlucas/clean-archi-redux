@@ -1,0 +1,70 @@
+{
+  "general": {
+    "tabTitle": "Presentation - {{trainingTitle}}",
+    "pageTitle": "Presentation",
+    "modulesTitle": "Modules details",
+    "userKPIs": "In some numbers",
+    "testimonyTitle": "Testimoniales",
+    "catalogueTitle": "Of the same andragogue",
+    "publication": {
+      "catalog": {
+        "carouselTitle": "Catalog",
+        "carouselViewAll": "See all"
+      }
+    },
+    "nav_bar": {
+      "presentation": "Presentation",
+      "modules_details": "Modules details",
+      "user_kpis": "In some numbers",
+      "testimonials": "Testimonials",
+      "catalog": "Catalog"
+    }
+  },
+  "modules_details": {
+    "fetch_error_title": "An error occurred while retrieving module details",
+    "fetch_error_subtitle": "Please try again later.",
+    "session_one": "{{count}} session",
+    "session_other": "{{count}} sessions",
+    "activity_one": "{{count}} activity",
+    "activity_other": "{{count}} activities"
+  },
+  "header": {
+    "by": "By <0>{{author}}</0>",
+    "currency_suffix": "{{amount}} {{currency}}",
+    "certification_badge": "Certifying training",
+    "cta_button": "Follow the training"
+  },
+  "training_infos": {
+    "associates": "Associate·s",
+    "author_details": "See profil",
+    "courses_one": "{{count}} Training",
+    "courses_other": "{{count}} Trainings",
+    "users_one": "{{count}} User",
+    "users_other": "{{count}} Users",
+    "followers_one": "Followed by {{count}} user",
+    "followers_other": "Followed by {{count}} users",
+    "recommendations_one": "{{count}} recommendation",
+    "recommendations_other": "{{count}} recommendations"
+  },
+  "publication_content": {
+    "skills": "Required skills",
+    "description": "Training description",
+    "objectives": "Training goals",
+    "profils": "Profil·s",
+    "qualifications": "Qualifications",
+    "prerequisites": "Prerequisites"
+  },
+  "training_meta": {
+    "certification": "Certification",
+    "modules": {
+      "presential": "Presential",
+      "virtual_classroom": "Virtual classroom",
+      "e_learning": "E-learning",
+      "micro_learning": "Micro-learning",
+      "modules_count_one": "{{count}} module",
+      "modules_count_other": "{{count}} modules",
+      "beginDate": "From",
+      "endDate": "to"
+    }
+  }
+}

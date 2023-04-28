@@ -1,0 +1,44 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@andragog/domain/usecases/*": ["src/domain/usecases/*"],
+      "@andragog/domain/entities/*": ["src/domain/entities/*"],
+      "@andragog/infrastructure/*": ["src/infrastructure/*"],
+      "@andragog/services/*": ["src/services/*"],
+      "@andragog/shared/*": ["src/shared/*"],
+      "@andragog/store": ["src/store/store.ts"],
+      "@andragog/userinterface/components/*": [
+        "src/userinterface/components/*"
+      ],
+      "@andragog/userinterface/pages/*": ["src/userinterface/pages/*"],
+      "@ui-lib/*": ["src/services/ui-library/src/lib/*"],
+      "@ui-lib-v2/*": ["src/services/ui-library-v2/src/lib/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

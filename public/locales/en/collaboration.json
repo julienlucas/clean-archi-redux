@@ -1,0 +1,24 @@
+{
+  "general": {
+    "title": "Collaboration",
+    "stopCollab": "Suspend relationship",
+    "stopCollabLabel": "Would you like to end the relationship?",
+    "stopCollabSubLabel": "All these collaborations with you will be stopped immediately.",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "totalDuration": "Total duration",
+    "a11y": "all public",
+    "seeSessions": "See his sessions",
+    "closeSessions": "Close his sessions",
+    "filter": "Filter by:",
+    "seeAll": "See all",
+    "training": "training design",
+    "myTrainnings": "My training designs",
+    "companies": "Company\u00B7s",
+    "collaborations": "Collaboration\u00B7s",
+    "catalogue": "Catalogue",
+    "see": "See",
+    "modify": "Modify",
+    "to": "to"
+  }
+}

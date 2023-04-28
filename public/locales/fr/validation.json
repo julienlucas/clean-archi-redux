@@ -1,0 +1,29 @@
+{
+  "generic": {
+    "required": "Ce champ est requis.",
+    "invalid": "Ce champ est invalide."
+  },
+  "string": {
+    "min_one": "Minimum de {{count}} caractère requis.",
+    "min_other": "Minimum de {{count}} caractères requis.",
+    "max": "Maximum de {{count}} caractères requis."
+  },
+  "file": {
+    "fileType": "Ce type de fichier n'est pas supporté, veuillez transférer un autre fichier."
+  },
+  "collection": {
+    "min_one": "Ce champ doit avoir au minimum {{count}} objet.",
+    "min_other": "Ce champ doit avoir au minimum {{count}} objets.",
+    "max": "Ce champ doit avoir au maximum {{count}} objets."
+  },
+  "name": {
+    "name_required": "Le nom est requis",
+    "name_min": "Minimum {{num}} caractères",
+    "name_max": "Maximum {{num}} caractères"
+  },
+  "description": {
+    "description_required": "La description est obligatoire",
+    "description_min": "La description doit comporter au moins {{num}} caractères",
+    "description_max": "La longueur maximale de la description est de {{num}} caractères"
+  }
+}

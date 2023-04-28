@@ -1,0 +1,17 @@
+{
+  "activateModality": "Activate",
+  "activities": "Activities",
+  "deleteModuleAlert": {
+    "body": "Do you confirm the deletion?",
+    "cancel": "Cancel",
+    "confirm": "Delete",
+    "title": "Do you confirm the deletion?",
+    "subTitle": "The module and all of its activities will be permanently deleted."
+  },
+  "elearning": "E-learning",
+  "faceToFace": "Face-to-face",
+  "microlearning": "Microlearning",
+  "virtualClassroom": "Virtual classroom",
+  "session": "Session⸱s",
+  "module": "Module⸱s"
+}

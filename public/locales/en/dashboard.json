@@ -1,0 +1,49 @@
+{
+  "general": {
+    "title": "Dashboard",
+    "KPI": {
+      "activityBarometer": "Activity barometer",
+      "dropdown": {
+        "audience": "Audience",
+        "results": "Results",
+        "modalities": "Modalities",
+        "moreOptions": "More options"
+      },
+      "filterBy": "[TODO]Filtrer par :",
+      "title": "KPI Global"
+    },
+    "publication": {
+      "sectionTitle": "Training pusblished",
+      "dropdownOptions": {
+        "bestSell": "Best sale",
+        "bestRating": "Best rate",
+        "bestCompletion": "Best completion",
+        "moreOptions": "More options"
+      },
+      "companies": {
+        "carouselTitle": "Companies\u00B7s",
+        "carouselViewAll": "View all"
+      },
+      "catalog": {
+        "carouselTitle": "Catalogue",
+        "carouselViewAll": "View all"
+      }
+    },
+    "calendar": {
+      "sectionTitle": "Session·s calendar",
+      "switchOptions": {
+        "myMeetings": "My appointments",
+        "myCollaborations": "My collaborations"
+      },
+      "legend": {
+        "presential": "Presential",
+        "virtual": "Virtual classroom",
+        "validate": "Validate",
+        "pending": "Pending"
+      }
+    },
+    "collaborations": {
+      "sectionTitle": "Collaboration·s & associate·s"
+    }
+  }
+}

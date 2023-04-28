@@ -1,0 +1,88 @@
+{
+  "general": {
+    "registrationEnd": "Registration end",
+    "synchronize": "Synchronize",
+    "overview": "Overview",
+    "session": "Session⸱s",
+    "start": "Start",
+    "end": "End",
+    "minimum": "Minimum",
+    "maximum": "Maximum",
+    "slotsTotalDuration": "Slots total duration",
+    "moduleTotalDuration": "Module total duration",
+    "addSession": "Add a session",
+    "sessionTitlePlaceholder": "Enter a session name",
+    "programSession": "Program",
+    "slotInvitesError": "One or more slot·s are missing a coach.",
+    "slotInvitesErrorTitle": "Missing session info",
+    "slotDurationError": "The total session duration time is incorrect",
+    "slotDurationErrorTitle": "Total session duration is incorrect",
+    "sessionPeriodError": "The selected period for the session is passed",
+    "sessionPeriodErrorTitle": "Session period passed",
+    "slotsOutOfSessionRange": "Slot⸱s out of session date range",
+    "modal": {
+      "delete": {
+        "confirm": "Delete",
+        "cancel": "Cancel",
+        "title": "Do you confirm the deletion?",
+        "subTitle": "The training will be deleted permanently."
+      },
+      "duplicate": {
+        "confirm": "Confirm",
+        "cancel": "cancel",
+        "title": "Do you confirm duplication?",
+        "subTitle": "The session will be duplicated."
+      }
+    }
+  },
+  "sessionState": {
+    "UNPUBLISHED": "Session Unpublished",
+    "PENDING": "Session Pending",
+    "SCHEDULED": "Session Scheduled",
+    "CONFIRMED": "Session Confirmed",
+    "CLOSED": "Registration closed",
+    "DONE": "Session Done",
+    "CANCELED": "Session Canceled"
+  },
+  "coachState": {
+    "SAVED": "Non answered",
+    "PENDING": "Non answered",
+    "ACCEPTED": "Confirmed",
+    "REFUSED": "Refused"
+  },
+  "slots": {
+    "addSlot": "Add a slot",
+    "slotInformation": "Slot information",
+    "editSlot": "Edit a slot",
+    "name": "Name",
+    "address": "Address",
+    "videoConference": "Video conference",
+    "videoConferencePlaceholder": "Video call link",
+    "date": "Date",
+    "fromTime": "From",
+    "toTime": "To",
+    "furtherInformation": "Further information",
+    "furtherInformationPlaceholder": "Enter a synthetic training description",
+    "coachesAssiociatedToSlot": "Coach⸱es associated to the slot : ",
+    "validate": "Done",
+    "cancel": "Cancel",
+    "deleteSlot": "Delete",
+    "duplicateSlot": "Duplicate",
+    "copySuffix": "(COPY)",
+    "External": "External",
+    "Internal": "Internal",
+    "slotOverlap": "2 slots cannot overlap"
+  },
+  "deleteSessionModalAlert": {
+    "title": "Do you confirm deletion",
+    "message": "If you confirm, the session will be permanently deleted."
+  },
+  "deleteSlotModalAlert": {
+    "title": "Do you confirm deletion",
+    "message": "If you confirm, the slot will be permanently deleted."
+  },
+  "deleteSlotsModalAlert": {
+    "title": "Session date modification",
+    "message": "Slots outside the session period will be deleted."
+  }
+}

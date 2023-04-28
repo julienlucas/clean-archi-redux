@@ -1,0 +1,6 @@
+mutation archiveTraining($trainingId: Int!) {
+  archiveTraining(trainingId: $trainingId) {
+    id
+    title
+  }
+}

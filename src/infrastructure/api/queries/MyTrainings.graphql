@@ -1,0 +1,117 @@
+query myTrainings {
+  myTrainings {
+    id
+    adaptiveLearning
+    colorScheme
+    createdAt
+    isValid
+    description
+    disabilities
+    language
+    modalities
+    screenSizes
+    state
+    title
+    author {
+      id
+      profile {
+        firstname
+        id
+        lastname
+        recap
+        email
+      }
+    }
+    objectives {
+      order
+      value
+    }
+    prerequisites {
+      order
+      value
+    }
+    qualifications {
+      title
+    }
+    skills {
+      name
+    }
+    targets {
+      title
+    }
+    thumbnail {
+      miniatureXPosition
+      miniatureYPosition
+      miniatureZoom
+      path
+      xPosition
+      yPosition
+      zoom
+    }
+    theme {
+      dateOfCreation
+      fonts
+      id
+      version
+    }
+    modules {
+      ... on LoadableSessionModule {
+        id
+        author
+        totalDuration
+        limitDuration
+        modality
+        name
+        description
+        position
+        status
+        sessions {
+          id
+          title
+          begin
+          end
+          maximum
+          minimum
+          type
+          zoneId
+          slots {
+            date
+            description
+            finish
+            id
+            info
+            start
+            title
+            invites {
+              id
+              status
+              coach {
+                id
+                profile {
+                  id
+                  firstname
+                  lastname
+                  email
+                }
+              }
+            }
+          }
+        }
+      }
+      ... on LoadableActivityModule {
+        id
+        author
+        totalDuration
+        modality
+        name
+        position
+        status
+        conceptActivities
+        activeActivities
+        # activities {
+        #   id
+        # }
+      }
+    }
+  }
+}

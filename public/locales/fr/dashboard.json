@@ -1,0 +1,49 @@
+{
+  "general": {
+    "title": "Journal",
+    "KPI": {
+      "activityBarometer": "Baromètre d'activité",
+      "dropdown": {
+        "audience": "Audience",
+        "results": "Résultats",
+        "modalities": "Modalités",
+        "moreOptions": "Plus d’options"
+      },
+      "filterBy": "Filtrer par :",
+      "title": "KPI Global"
+    },
+    "publication": {
+      "sectionTitle": "Parcours publié·s",
+      "dropdownOptions": {
+        "bestSell": "Résultats",
+        "bestRating": "Meilleure note",
+        "bestCompletion": "Meilleure complétion",
+        "moreOptions": "Plus d'options"
+      },
+      "companies": {
+        "carouselTitle": "Entreprise\u00B7s",
+        "carouselViewAll": "Tout voir"
+      },
+      "catalog": {
+        "carouselTitle": "Catalogue",
+        "carouselViewAll": "Tout voir"
+      }
+    },
+    "calendar": {
+      "sectionTitle": "Calendrier de session·s",
+      "switchOptions": {
+        "myMeetings": "Mes rendez-vous",
+        "myCollaborations": "Mes collaborations"
+      },
+      "legend": {
+        "presential": "Présentiel",
+        "virtual": "Classe virtuelle",
+        "validate": "Validée·s",
+        "pending": "En attente de confirmation"
+      }
+    },
+    "collaborations": {
+      "sectionTitle": "Collaboration·s et associé·e·s"
+    }
+  }
+}

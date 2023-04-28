@@ -1,0 +1,6 @@
+mutation publishTraining($trainingId: Int!) {
+  publishTraining(trainingId: $trainingId) {
+    id
+    title
+  }
+}

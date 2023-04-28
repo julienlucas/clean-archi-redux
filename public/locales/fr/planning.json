@@ -1,0 +1,19 @@
+{
+  "general": {
+    "title": "Calendrier de session",
+    "rendez-vous": "Mes rendez-vous",
+    "calendar": {
+      "sectionTitle": "Calendrier de session·s",
+      "switchOptions": {
+        "myMeetings": "Mes rendez-vous",
+        "myCollaborations": "Mes collaborations"
+      },
+      "legend": {
+        "presential": "Présentiel",
+        "virtual": "Classe virtuelle",
+        "validate": "Validée·s",
+        "pending": "En attente de confirmation"
+      }
+    }
+  }
+}

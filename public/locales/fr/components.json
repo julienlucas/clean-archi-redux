@@ -1,0 +1,51 @@
+{
+  "switch": {
+    "no": "Non",
+    "yes": "Oui"
+  },
+  "autocomplete": {
+    "defaultActionLabel": "Ajouter",
+    "loading": "Chargement...",
+    "placeholder": "Ajouter",
+    "placeholderGeneralThematics": "Catégorie·s générale·s",
+    "placeholderOrgThematics": "Catégorie·s de l'organisation",
+    "toggleList": "Basculer la liste",
+    "unRegisteredUser": "Utilisateur non enregistré"
+  },
+  "bannerUploader": {
+    "guideline": "JPG ou PNG jusqu'à 5Mo, 1920x1080"
+  },
+  "cookies": {
+    "accept": "Accepter",
+    "cookiesSettings": "Paramètres",
+    "readMore": "En savoir plus",
+    "siteUsesCookies": "Ce site utilise des cookies."
+  },
+  "upload": {
+    "dragnDropType": "Glissez et déposez votre {{type}} ici",
+    "dragnDropMedia": "Glissez et déposez votre média ici",
+    "dropType": "Déposez votre {{type}} ici pour le télécharger",
+    "dropMedia": "Déposez votre média ici pour le télécharger",
+    "or": "OU",
+    "browse": "Parcourir",
+    "embeddedVideo": "Video intégrée",
+    "embeddedVideoPlaceholder": "URL de la vidéo, ex : http://mavideo.com/",
+    "upTo": "jusqu'à",
+    "quantityNotAccepted_one": "La quantité du fichier n'est pas acceptée !",
+    "quantityNotAccepted_other": "La quantité de fichiers n'est pas acceptée !",
+    "maximumQuantity_one": "Quantité maximale de fichier acceptée pour le téléchargement : {{maxQuantity}}",
+    "maximumQuantity_other": "Quantité maximale de fichiers acceptée pour le téléchargement : {{maxQuantity}}",
+    "formatNotAccepted": "Le format du fichier n'est pas accepté !",
+    "formatForUpload": "Format de fichier accepté pour le téléchargement : {{accept}}",
+    "sizesNotAccepted_one": "La taille du fichier n'est pas acceptée !",
+    "sizesNotAccepted_other": "Les tailles de fichiers ne sont pas acceptées !",
+    "sizeError": "Taille maximale du fichier acceptée pour le téléchargement : {{maxSize}}MB",
+    "maxTotalSizeError": "Taille maximale totale des fichiers acceptée pour le téléchargement : {{maxTotalSize}}MB",
+    "resolutionNotAccepted_one": "La résolution du fichier n'est pas acceptée !",
+    "resolutionNotAccepted_other": "La résolution des fichiers n'est pas acceptée !",
+    "widthError": "Largeur entre {{min}}px et {{max}}px acceptée pour le téléchargement",
+    "heightError": "Hauteur entre {{min}}px et {{max}}px acceptée pour le téléchargement",
+    "uploadErrorTitle": "Erreur pendant le téléchargement",
+    "uploadErrorDescription": "Une erreur s'est produite pendant le téléchargement, veuillez réessayer plus tard"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "general": {
+    "title": "Production - ANDRAGOG",
+    "pageTitle": "Production·s & catalog·s",
+    "create": "Create a training",
+    "edit": "Edit",
+    "view": "View",
+    "glossary": "Glossary",
+    "noTitle": "No Title",
+    "modal": {
+      "delete": {
+        "confirm": "Delete",
+        "cancel": "Cancel",
+        "title": "Do you confirm the deletion?",
+        "subTitle": "The training will be deleted permanently."
+      },
+      "archive": {
+        "confirm": "Confirm",
+        "cancel": "cancel",
+        "title": "Do you confirm archiving?",
+        "subTitle": "The training will be removed from the Andragog calatog."
+      }
+    }
+  },
+  "create": {
+    "title": "Training creation - ANDRAGOG",
+    "qualiopiText": "[TODO] Complétez l’ensemble des champs ci-dessous pour améliorer votre visibilité et répondre aux critères de référencement Qualiopi."
+  },
+  "training": {
+    "view": {
+      "title": "{{trainingTitle}} - ANDRAGOG",
+      "helperText": "Fill in all the information to boost your visibility"
+    },
+    "edit": {
+      "timeline": {
+        "duplicatedModulePrefix": "(COPY) ",
+        "duration": "Duration: {{duration}}",
+        "elearning": "{{elearningsNumber}} E-learning",
+        "faceToFace": "{{liveMeetingsNumber}} Face-to-face",
+        "microlearning": "{{microlearningsNumber}} Microlearning",
+        "multimodal": "Multimodal",
+        "timeline": "Training course",
+        "title": "Timeline {{trainingTitle}} - ANDRAGOG",
+        "virtualClassroom": "{{onlineMeetingsNumber}} Virtual classroom"
+      },
+      "publication": {
+        "title": "{{trainingTitle}} Publication - ANDRAGOG",
+        "publication": "Publication"
+      },
+      "configuration": {
+        "supportLabel": "Support",
+        "accessibilityLabel": "Accessibility",
+        "activity_one": "{{count}} activity",
+        "activity_other": "{{count}} activities",
+        "learner_one": "{{count}} Learner",
+        "learner_other": "{{count}} Learner·s",
+        "adaptiveLearningLabel": "Adaptive learning",
+        "adaptiveLearningText": "You will be able to group activities in order to bring a unique learning experience to your learners.",
+        "animationLabel": "3D Animation",
+        "bannerCoverText": "Cover",
+        "bannerLabel": "Banner",
+        "bannerOverviewText": "Name of the training",
+        "bannerPreviewText": "Preview your image",
+        "bannerSubLabel": "Add an appealing image that will bring people to your training.",
+        "bannerTrainingNameText": "Name of the training",
+        "configuration": "Configuration",
+        "configurationInput": "Enter a training name",
+        "continueText": "Continue",
+        "COLORBLIND": "Colorblind",
+        "descriptionLabel": "Description of the training",
+        "descriptionPlaceholder": "Enter a synthetic training description",
+        "designLabel": "Design",
+        "desktopLabel": "Desktop",
+        "moreDetails": "More details",
+        "NONE": "None",
+        "elearningLabel": "E-learning",
+        "newTrainingLabel": "new",
+        "englishLabel": "English",
+        "faceToFaceLabel": "Face-to-face",
+        "frenchLabel": "French",
+        "HARD_OF_HEARING": "Hard of hearing",
+        "HARD_OF_HEARING_VISUALLY_IMPAIRED": "Hard of hearing/Visually Impaired",
+        "helperText": "Fill in all the information to boost your visibility",
+        "languageLabel": "Language",
+        "microlearningLabel": "Microlearning",
+        "mobileLabel": "Mobile",
+        "removeItem": "Remove item",
+        "modalitiesLabel": "Modalities",
+        "monochromeLabel": "Monochrome",
+        "moreTemplatesLabel": "See more",
+        "overviewOfCards": "Overview of cards",
+        "polychromeLabel": "Polychrome",
+        "prerequisitesAppendLabel": "Add",
+        "prerequisitesLabel": "Prerequisites",
+        "prerequisitesPlaceholder": "e.g. 'beginner JavaScript expirience'",
+        "profileLabel": "Profile",
+        "qualificationsLabel": "Qualification",
+        "resetAll": "Reset all",
+        "screensLabel": "Devices",
+        "scrollLabel": "Scroll",
+        "thematicsLabel": "Thematics",
+        "skillsLabel": "Skills",
+        "sliderLabel": "Slider",
+        "tabletLabel": "Tablet",
+        "targetingLabel": "Targeting",
+        "title": "Configuration {{trainingTitle}} - ANDRAGOG",
+        "trainingDestinationLabel": "Destination",
+        "trainingDestinationPlaceholder": "[TODO] Numéro(s) de commande",
+        "trainingDestinationOptions": {
+          "catalog": "Catalog",
+          "organization": "Organization"
+        },
+        "trainingInformationLabel": "Training information",
+        "trainingObjectivesAppendLabel": "Add",
+        "trainingObjectivesLabel": "Training objectives",
+        "trainingObjectivesPlaceholder": "e.g. 'basic understanding of React'",
+        "virtualClassroomLabel": "Virtual class",
+        "VISUALLY_IMPAIRED": "Visually impaired",
+        "destinationLanguage": "Destination language of the training",
+        "chooseALanguage": "Choose a language",
+        "chooseAnOption": "Choose an option"
+      },
+      "module": {
+        "title": "Module {{moduleName}} - {{trainingTitle}} - ANDRAGOG",
+        "errors": {
+          "preview": "Prévisualisation du module impossible",
+          "titleRequired": "[TODO] Le titre du module est requis",
+          "titleMinLength": "[TODO] Le titre du module est trop court",
+          "activitiesMinCount": "[TODO] Le nombre d'activités n'est pas suffisant",
+          "invalidActivities": "[TODO] Une ou plusieurs activités du module ne sont pas complètes"
+        }
+      }
+    }
+  }
+}

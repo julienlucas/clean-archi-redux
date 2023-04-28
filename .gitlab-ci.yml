@@ -1,0 +1,157 @@
+.setup_ssh: &setup_ssh
+  - eval `ssh-agent -s`
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - mkdir -m 700 ~/.ssh
+  - touch -m 600 ~/.ssh/known_hosts
+  - ssh-keyscan github.com > ~/.ssh/known_hosts
+  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+
+.pnpm_base:
+  image: node:lts-alpine3.17
+  before_script:
+    - apk add git alpine-sdk bash openssh ca-certificates
+    - *setup_ssh
+    - npm install --location=global npm pnpm
+    - pnpm config set store-dir .pnpm-store
+    - pnpm install
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+    paths:
+      - .pnpm-store
+  only:
+    refs:
+      - main
+      - master
+      - devsre
+  except:
+    - tags
+
+.deploy_base:
+  image: node:lts-alpine3.17
+  variables:
+    S3_ALIAS: gcs
+    BUCKET_ROOT_PATH: ${S3_ALIAS}/andragog-v3-${S3_ENV}-applications
+  before_script:
+    - apk add git alpine-sdk bash openssh ca-certificates
+    - apk add minio-client --repository=https://dl-cdn.alpinelinux.org/alpine/edge/testing
+    - alias mc=mcli
+    - *setup_ssh
+    - mc alias set ${S3_ALIAS} https://storage.googleapis.com ${GCP_ACCESS_KEY} ${GCP_SECRET}
+  script:
+    - mc cp -r ${CI_PROJECT_DIR}/dist/ ${BUCKET_ROOT_PATH}/
+  only:
+    refs:
+      - main
+      - master
+      - devsre
+  except:
+    - tags
+
+.cloud-run:
+  only:
+    - main
+    - master
+  trigger:
+    include: ci/gitlab/deploy-cloud-run.yml
+    strategy: depend
+  allow_failure: false
+  variables:
+    APP_VERSION: $BUILD_VERSION-$CI_COMMIT_SHORT_SHA-$ENV
+    BUGSNAG_API_KEY: $BUGSNAG_API_KEY
+    BUGSNAG_RELEASE_STAGE: $ENV
+    GOOGLE_OAUTH_CLIENT_ID: $GOOGLE_OAUTH_CLIENT_ID
+    PARENT_PIPELINE_ID: $CI_PIPELINE_ID
+
+stages:
+  - validation
+  - release
+  - deploy
+
+default:
+  before_script:
+    - HIGHLIGHT="\e[46;1m" && CLEAR="\e[0m"
+
+variables:
+  DOCKER_IMAGE: andragog-frontend
+
+lint:
+  extends: .pnpm_base
+  stage: validation
+  only:
+    - merge_requests
+  script:
+    - pnpm lint:ci
+
+build:
+  extends: .pnpm_base
+  stage: validation
+  only:
+    - merge_requests
+  script:
+    - pnpm build
+
+# test:
+#   extends: .pnpm_base
+#   stage: validation
+#   only:
+#     - merge_requests
+#   script:
+#     - pnpm test
+
+# See https://semantic-release.gitbook.io/semantic-release/support/faq
+# See https://pnpm.io/cli/dlx
+semantic-release:
+  extends: .pnpm_base
+  stage: release
+  script:
+    - cp ci/semantic-release/.releaserc.yml .
+    - |
+      pnpm \
+        --package=semantic-release \
+        --package=@semantic-release/git \
+        --package=@semantic-release/gitlab \
+        dlx semantic-release
+    - BUILD_VERSION=$(git describe --tags --abbrev=0)
+    - echo "BUILD_VERSION=$BUILD_VERSION" >> build.env
+  artifacts:
+    reports:
+      dotenv: build.env
+  dependencies: [] # this speeds up the job by not downloading any job artifacts from previous stages
+
+deploy-dev:
+  stage: deploy
+  extends: .cloud-run
+  when: always
+  variables:
+    ENV: dev
+    API_V1_BASE_URL: $DEV_API_V1_BASE_URL
+    API_V2_BASE_URL: $DEV_API_V2_BASE_URL
+    KOTLIN_API_ROUTE: $DEV_API_V1_BASE_URL
+    KOTLIN_GRAPHQL_API_ROUTE: $DEV_GRAPHQL_API_BASE_URL
+    PLATFORM_URL_ROUTE: $DEV_API_HOST
+
+deploy-qa:
+  stage: deploy
+  extends: .cloud-run
+  when: manual
+  variables:
+    ENV: qa
+    API_V1_BASE_URL: $QA_API_V1_BASE_URL
+    API_V2_BASE_URL: $QA_API_V2_BASE_URL
+    KOTLIN_API_ROUTE: $QA_API_V1_BASE_URL
+    KOTLIN_GRAPHQL_API_ROUTE: $QA_GRAPHQL_API_BASE_URL
+    PLATFORM_URL_ROUTE: $QA_API_HOST
+
+deploy-staging:
+  stage: deploy
+  extends: .cloud-run
+  when: manual
+  variables:
+    ENV: staging
+    API_V1_BASE_URL: $STAGING_API_V1_BASE_URL
+    API_V2_BASE_URL: $STAGING_API_V2_BASE_URL
+    KOTLIN_API_ROUTE: $STAGING_API_V1_BASE_URL
+    KOTLIN_GRAPHQL_API_ROUTE: $STAGING_GRAPHQL_API_BASE_URL
+    PLATFORM_URL_ROUTE: $STAGING_API_HOST

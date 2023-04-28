@@ -1,0 +1,48 @@
+{
+  "general": {
+    "title": "Formathèque",
+    "publication": {
+      "sectionTitle": "Formathèque",
+      "dropdownTrainingsOptions": {
+        "all": "Voir tous",
+        "recommanded": "Recommandations",
+        "new": "Nouveautées",
+        "liked": "Appréciés sur Andragog",
+        "favorites": "Favoris"
+      },
+      "dropdownThematicsOptions": {
+        "all": "Toutes les thématiques"
+      },
+      "recommandations": {
+        "carouselTitle": "Recommandation\u00B7s",
+        "carouselViewAll": "Tout voir"
+      },
+      "newsTraining": {
+        "carouselTitle": "Nouveautée\u00B7s",
+        "carouselViewAll": "Tout voir"
+      },
+      "likesTrainings": {
+        "carouselTitle": "Appréciée\u00B7s sur Andragog",
+        "carouselViewAll": "Tout voir"
+      },
+      "favoritesTrainings": {
+        "carouselTitle": "Favorite\u00B7s",
+        "carouselViewAll": "Tout voir"
+      }
+    },
+    "publicationGrid": {
+      "LoadMoreButton": "Charger plus",
+      "noMoreTrainings": "Pas de formations supplémentaire"
+    },
+    "KPI": {
+      "activityBarometer": "En quelques chiffres",
+      "dropdown": {
+        "audience": "Audience",
+        "results": "Résultats",
+        "modalities": "Modalités",
+        "moreOptions": "Plus d’options"
+      },
+      "title": "KPI Global"
+    }
+  }
+}

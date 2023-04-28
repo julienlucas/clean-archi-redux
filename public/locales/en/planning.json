@@ -1,0 +1,19 @@
+{
+  "general": {
+    "title": "Sessions calendar",
+    "rendez-vous": "My meetings",
+    "calendar": {
+      "sectionTitle": "Session·s calendar",
+      "switchOptions": {
+        "myMeetings": "My appointments",
+        "myCollaborations": "My collaborations"
+      },
+      "legend": {
+        "presential": "Presential",
+        "virtual": "Virtual classroom",
+        "validate": "Validate",
+        "pending": "Pending"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "general": {
+    "cancel": "Annuler",
+    "title": "Mon profil",
+    "save": "Enregistrer",
+    "add": "Ajouter"
+  },
+  "photo": {
+    "addSocialNetwork": "Ajouter un réseau social",
+    "country": "Pays",
+    "currentLocation": "Lieu·x actuel·s",
+    "currentPosition": "Poste·s actuel·s",
+    "diplomasCertifications": "Diplôme·s et certification·s obtenu·s",
+    "editSocialNetwork": "Modifier les réseaux sociaux",
+    "fakeAdress": "Salon C&C 13 rue Lamarte, 13003 Marseille",
+    "networkURL": "URL de votre réseau",
+    "previousJobs": "Poste·s précédent·s",
+    "regionAndDepartments": "Région·s et département·s",
+    "title": "Photo et identité",
+    "titleLocality": "Localité·s d’activité·s",
+    "titleModal": "Photo de profil",
+    "titlePro": "Circuit professionnel",
+    "town": "Ville"
+  },
+  "myAndragogProfile": {
+    "animation": "Animation",
+    "collaboration": "Collaboration",
+    "conception": "Conception",
+    "title": "Mon profil andragogue",
+    "titleDescription": "Moi en cent caractères",
+    "titleExperience": "Mon expérience d’Andragogue",
+    "titleRates": "Tarif horaire",
+    "titleSkills": "Compétences"
+  },
+  "myManagerProfile": {
+    "title": "Mon profil responsable"
+  },
+  "myLearnerProfile": {
+    "appropriateTimes": "Moment·s approprié·s",
+    "idealDurations": "Durée·s idéale·s",
+    "preferredDevices": "Support·s préféré·s",
+    "preferredModalities": "Modalité·s préférée·s",
+    "title": "Mon profil apprenant",
+    "titleInterests": "Centres d’intérêts",
+    "titleSettings": "Mes préférences pour me former",
+    "settings": {
+      "afternoon": "L’après midi (14:00 à 18:00)",
+      "evening": "Le soir (18:00 à 00:00)",
+      "less15Min": "Inférieure ou égale à 15 minutes",
+      "less1Hour": "Inférieure ou égale à une heure",
+      "less3Hours": "Inférieure ou égale à trois heures",
+      "less1Day": "Inférieure ou égale à un jour",
+      "less1Week": "Inférieure ou égale à une semaine",
+      "less1Month": "Inférieure ou égale à un mois",
+      "midday": "Le midi (12:00 à 14:00)",
+      "mondayToFriday": "Du lundi au vendredi",
+      "more1Month": "Supérieure à un mois",
+      "morning": "Le matin (07:00 à 12:00)",
+      "night": "La nuit (00:00 à 07:00)",
+      "satSunHolidays": "Samedi, dimanche et jours fériés"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+mutation updateTraining(
+  $trainingId: Int!
+  $title: String
+  $description: String
+  $adaptiveLearning: Boolean
+  $language: Language
+  $modalities: [Modality!]
+  $screenSizes: [ScreenSize!]
+  $disabilities: [Disability!]
+  $themeId: String
+  $colorScheme: Int
+  $prerequisite: [String!]
+  $objectives: [String!]
+  $skills: [String!]
+  $qualifications: [String!]
+  $targets: [String!]
+) {
+  updateTraining(
+    trainingId: $trainingId
+    title: $title
+    description: $description
+    adaptiveLearning: $adaptiveLearning
+    language: $language
+    modalities: $modalities
+    screenSizes: $screenSizes
+    disabilities: $disabilities
+    themeId: $themeId
+    colorScheme: $colorScheme
+    prerequisite: $prerequisite
+    objectives: $objectives
+    skills: $skills
+    qualifications: $qualifications
+    targets: $targets
+  ) {
+    id
+    adaptiveLearning
+    colorScheme
+    createdAt
+    description
+    disabilities
+    isValid
+    language
+    modalities
+    screenSizes
+    title
+    author {
+      id
+      profile {
+        firstname
+        id
+        lastname
+        recap
+        email
+      }
+    }
+    objectives {
+      order
+      value
+    }
+    prerequisites {
+      order
+      value
+    }
+    qualifications {
+      title
+    }
+    skills {
+      name
+    }
+    targets {
+      title
+    }
+    thumbnail {
+      miniatureXPosition
+      miniatureYPosition
+      miniatureZoom
+      path
+      xPosition
+      yPosition
+      zoom
+    }
+    theme {
+      dateOfCreation
+      fonts
+      id
+      version
+    }
+  }
+}

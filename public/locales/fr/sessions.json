@@ -1,0 +1,88 @@
+{
+  "general": {
+    "registrationEnd": "Fin des inscriptions",
+    "synchronize": "Synchroniser",
+    "overview": "Vue globale",
+    "session": "Session⸱s",
+    "start": "Début",
+    "end": "Fin",
+    "minimum": "Minimum",
+    "maximum": "Maximum",
+    "slotsTotalDuration": "Durée totale des créneaux",
+    "moduleTotalDuration": "Durée totale du module",
+    "addSession": "Ajouter une session",
+    "sessionTitlePlaceholder": "Saisir un nom de session",
+    "programSession": "Programmer",
+    "slotInvitesError": "Un ou plusieurs créneau·x sans coach.",
+    "slotInvitesErrorTitle": "Session information·s manquante·s",
+    "slotDurationError": "La durée totale de la session ne correspond pas à celle définie dans le module.",
+    "slotDurationErrorTitle": "Session durée totale incorrecte",
+    "sessionPeriodError": "Date·s de la session antérieure·s à la date du jour.",
+    "sessionPeriodErrorTitle": "Session date·s incorrecte·s",
+    "slotsOutOfSessionRange": "Créneaux hors de la plage de session",
+    "modal": {
+      "delete": {
+        "confirm": "Supprimer",
+        "cancel": "Annuler",
+        "title": "Confirmez-vous la suppression ?",
+        "subTitle": "La formation sera définitivement supprimée."
+      },
+      "duplicate": {
+        "confirm": "Confirmer",
+        "cancel": "Annuler",
+        "title": "Confirmez-vous la duplication ?",
+        "subTitle": "La session sera dupliquée."
+      }
+    }
+  },
+  "sessionState": {
+    "UNPUBLISHED": "Session non publiée",
+    "PENDING": "Session en attente",
+    "SCHEDULED": "Session planifiée",
+    "CONFIRMED": "Session confirmée",
+    "CLOSED": "Inscription clôturée",
+    "DONE": "Session effectuée",
+    "CANCELED": "Session annulée"
+  },
+  "coachState": {
+    "SAVED": "Non répondu",
+    "PENDING": "Non répondu",
+    "ACCEPTED": "validé",
+    "REFUSED": "Refusé"
+  },
+  "slots": {
+    "addSlot": "Ajouter un slot",
+    "slotInformation": "Information du créneau",
+    "editSlot": "Editer un créneau",
+    "name": "Nom",
+    "address": "Adresse",
+    "videoConference": "Visio",
+    "videoConferencePlaceholder": "Lien de vidéo call",
+    "date": "Date",
+    "fromTime": "De",
+    "toTime": "Jusqu'à",
+    "furtherInformation": "Informations complémentaires",
+    "furtherInformationPlaceholder": "Saisir des informations complémentaires",
+    "coachesAssiociatedToSlot": "Coach⸱s associé⸱s au créneau : ",
+    "validate": "Valider",
+    "cancel": "Annuler",
+    "deleteSlot": "Supprimer",
+    "duplicateSlot": "Dupliquer",
+    "copySuffix": "(COPIE)",
+    "External": "Externe",
+    "Internal": "Interne",
+    "slotOverlap": "2 créneaux ne peuvent pas se chevaucher"
+  },
+  "deleteSessionModalAlert": {
+    "title": "Confirmez-vous la suppression ?",
+    "message": "Si vous confirmez, la session sera définitivement supprimée."
+  },
+  "deleteSlotModalAlert": {
+    "title": "Confirmez-vous la suppression ?",
+    "message": "Si vous confirmez, le créneau sera définitivement supprimée."
+  },
+  "deleteSlotsModalAlert": {
+    "title": "Modification de date de session",
+    "message": "Le·s créneau·x hors période de la session seront supprimés."
+  }
+}

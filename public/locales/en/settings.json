@@ -1,0 +1,24 @@
+{
+  "general": {
+    "password": "Password",
+    "currentPassword": "Current password",
+    "typeNewPassword": "Type new password",
+    "confirmNewPassword": "Confirm new password",
+    "save": "Save",
+    "modify": "Modify",
+    "name": "Name",
+    "surname": "Surname",
+    "emailAddress": "Email address",
+    "phoneNumber": "Phone number",
+    "birthdate": "Birthdate",
+    "identity": "Identity"
+  },
+  "categories": {
+    "identityAndInfo": "Identity & information",
+    "ordersAndBills": "Orders & bills",
+    "bankDetails": "Bank details",
+    "privacy": "Privacy",
+    "security": "Security",
+    "deleteAccount": "Delete account"
+  }
+}

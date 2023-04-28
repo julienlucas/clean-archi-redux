@@ -1,0 +1,135 @@
+{
+  "general": {
+    "title": "Production - Formations",
+    "pageTitle": "Production·s et catalogue·s",
+    "create": "Créer Formation",
+    "edit": "Éditer",
+    "view": "Voir",
+    "glossary": "Glossaire",
+    "noTitle": "Sans Titre",
+    "modal": {
+      "delete": {
+        "confirm": "Supprimer",
+        "cancel": "Annuler",
+        "title": "Confirmez-vous la suppression ?",
+        "subTitle": "La formation sera définitivement supprimée."
+      },
+      "archive": {
+        "confirm": "Confirmer",
+        "cancel": "Annuler",
+        "title": "Confirmez-vous l'archivage ?",
+        "subTitle": "La formation sera retirée du catalogue Andragog."
+      }
+    }
+  },
+  "create": {
+    "title": "Création d'une formation - ANDRAGOG",
+    "qualiopiText": "Complétez l’ensemble des champs ci-dessous pour améliorer votre visibilité et répondre aux critères de référencement Qualiopi."
+  },
+  "training": {
+    "view": {
+      "title": "{{trainingTitle}} - ANDRAGOG",
+      "helperText": "Renseigner toutes les informations pour répondre aux critères Qualiopi et booster votre visibilité"
+    },
+    "edit": {
+      "timeline": {
+        "duplicatedModulePrefix": "(COPIE) ",
+        "duration": "Durée totale estimée ",
+        "elearning": "{{elearningsNumber}} E-learning",
+        "faceToFace": "{{liveMeetingsNumber}} Atelier présentiel",
+        "microlearning": "{{microlearningsNumber}} Microlearning",
+        "multimodal": "Multimodal",
+        "timeline": "Timeline",
+        "title": "Timeline {{trainingTitle}} - ANDRAGOG",
+        "virtualClassroom": "{{onlineMeetingsNumber}} Classe virtuelle"
+      },
+      "publication": {
+        "title": "Publication {{trainingTitle}} - ANDRAGOG",
+        "publication": "Publication"
+      },
+      "configuration": {
+        "supportLabel": "Support",
+        "accessibilityLabel": "Accessibilité",
+        "activity_one": "{{count}} activité",
+        "activity_other": "{{count}} activités",
+        "learner_one": "{{count}} Apprenant·e",
+        "learner_other": "{{count}} Apprenant·e·s",
+        "adaptiveLearningLabel": "Adaptive learning",
+        "adaptiveLearningText": "Cette fonctionnalité permet de créer des parcours e-learning et microlearning qui s’adaptent en temps réel aux résultats, à la sensibilité et au caractère de l’apprenant. Vous pourrez créer plusieurs activités complémentaires à la compréhension.",
+        "animationLabel": "Animation 3D",
+        "bannerCoverText": "Couverture",
+        "bannerLabel": "Affiche et vignette",
+        "bannerOverviewText": "Nom de la formation",
+        "bannerPreviewText": "Prévisualiser votre image",
+        "bannerSubLabel": "Ajouter un visuel pour illustrer la formation",
+        "bannerTrainingNameText": "Nom de la formation",
+        "configuration": "Configuration",
+        "configurationInput": "Saisir le nom de la formation",
+        "continueText": "Continuer",
+        "COLORBLIND": "Daltonien",
+        "descriptionLabel": "Description de la formation",
+        "descriptionPlaceholder": "Saisir une description synthétique de votre formation",
+        "designLabel": "Thème",
+        "desktopLabel": "Ordinateur",
+        "moreDetails": "Plus de détails",
+        "NONE": "Aucun",
+        "newTrainingLabel": "Nouveau",
+        "elearningLabel": "E-learning",
+        "englishLabel": "Anglais",
+        "faceToFaceLabel": "Atelier présentiel",
+        "frenchLabel": "Français",
+        "HARD_OF_HEARING": "Malentendant",
+        "HARD_OF_HEARING_VISUALLY_IMPAIRED": "Malentendant/Malvoyant",
+        "helperText": "Complétez l’ensemble des champs ci-dessous pour améliorer votre visibilité et répondre aux critères de référencement Qualiopi.",
+        "languageLabel": "Langue",
+        "microlearningLabel": "Microlearning",
+        "mobileLabel": "Mobile",
+        "removeItem": "Retirer l'élément",
+        "modalitiesLabel": "Modalité·s",
+        "monochromeLabel": "Monochrome",
+        "moreTemplatesLabel": "Voir plus",
+        "overviewOfCards": "Aperçu format carte",
+        "polychromeLabel": "Polychrome",
+        "prerequisitesAppendLabel": "Ajouter",
+        "prerequisitesLabel": "Prérequis",
+        "prerequisitesPlaceholder": "Être à l'aise dans la navigation sur Internet",
+        "profileLabel": "Profil·s",
+        "qualificationsLabel": "Certification·s",
+        "resetAll": "Effacer tout",
+        "screensLabel": "Dispositif·s",
+        "scrollLabel": "Scroll",
+        "thematicsLabel": "Thématique",
+        "skillsLabel": "Compétence·s",
+        "sliderLabel": "Slide",
+        "tabletLabel": "Tablette",
+        "targetingLabel": "Cible·s",
+        "title": "Configuration {{trainingTitle}} - ANDRAGOG",
+        "trainingDestinationLabel": "Destination",
+        "trainingDestinationPlaceholder": "Numéro(s) de commande",
+        "trainingDestinationOptions": {
+          "catalog": "Catalogue",
+          "organization": "Organisation"
+        },
+        "trainingInformationLabel": "Informations générales",
+        "trainingObjectivesAppendLabel": "Ajouter",
+        "trainingObjectivesLabel": "Objectif·s",
+        "trainingObjectivesPlaceholder": "Développer ma visibilité de mon entreprise sur les réseaux sociaux",
+        "virtualClassroomLabel": "Classe virtuelle",
+        "VISUALLY_IMPAIRED": "Malvoyant",
+        "destinationLanguage": "Langue de destination de la formation",
+        "chooseALanguage": "Choisissez une langue",
+        "chooseAnOption": "Choisissez une option"
+      },
+      "module": {
+        "title": "Module {{moduleName}} - {{trainingTitle}} - ANDRAGOG",
+        "errors": {
+          "preview": "Prévisualisation du module impossible",
+          "titleRequired": "Le titre du module est requis",
+          "titleMinLength": "Le titre du module est trop court",
+          "activitiesMinCount": "Le nombre d'activités n'est pas suffisant",
+          "invalidActivities": "Une ou plusieurs activités du module ne sont pas complètes"
+        }
+      }
+    }
+  }
+}

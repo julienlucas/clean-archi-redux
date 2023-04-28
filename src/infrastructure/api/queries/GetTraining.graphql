@@ -1,0 +1,69 @@
+query getTraining($id: Int!) {
+  getTraining(id: $id) {
+    id
+    adaptiveLearning
+    colorScheme
+    createdAt
+    description
+    disabilities
+    isValid
+    language
+    modalities
+    screenSizes
+    state
+    title
+    author {
+      id
+      profile {
+        firstname
+        id
+        lastname
+        recap
+        email
+      }
+    }
+    objectives {
+      order
+      value
+    }
+    prerequisites {
+      order
+      value
+    }
+    qualifications {
+      title
+    }
+    skills {
+      name
+    }
+    targets {
+      title
+    }
+    thumbnail {
+      miniatureXPosition
+      miniatureYPosition
+      miniatureZoom
+      path
+      xPosition
+      yPosition
+      zoom
+    }
+    theme {
+      activityTypes
+      author
+      bundle
+      colorSchemes
+      dateOfCreation
+      devices
+      disabilities
+      fonts
+      id
+      is3d
+      isAdaptiveLearning
+      name
+      previewImage
+      version
+      viewMode
+    }
+  }
+}

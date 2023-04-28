@@ -1,0 +1,56 @@
+{
+  "tabTitle": "Publication - {{trainingTitle}}",
+  "pageTitle": "Publication",
+  "notice": "See the notice",
+  "certificate": "Certificate",
+  "price": "Price",
+  "defineUnitPurchase": "Define the unit purchase amount of the training.",
+  "version": "Version {{version}}",
+  "learners": "{{learners}} Active learners",
+  "collaborators": "Collaborator·s",
+  "publish_button": "Publish",
+  "archive_button": "Archive",
+  "lang": {
+    "english": "English",
+    "french": "French"
+  },
+  "conception": {
+    "published": "Published",
+    "archived": "Archived",
+    "concept": "Conception"
+  },
+  "changePublishStatus": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "title": "Do you confirm the publication?",
+    "subTitle": "The training will be visible in the Andragog catalog."
+  },
+  "deadline": {
+    "deadline": "Deadline",
+    "days": "Day·s",
+    "fill": "Fill in the period of accessibility to this training course after the act of purchase (up to 730 days)."
+  },
+  "communication": {
+    "communication": "Communication",
+    "yes": "Yes",
+    "no": "No",
+    "previewNewsletter": "Preview newsletter",
+    "inform": "Inform your network of this new publication by an e-mailing campaign?"
+  },
+  "sales": {
+    "sales": "Sale·s",
+    "addOffer": "Add an offer by volume",
+    "applyDecreasingLevels": "Apply decreasing levels according to the single purchase volume (> 20%).",
+    "email": "contact@andragog.com",
+    "contact": "(any other request)"
+  },
+  "debit": {
+    "debit": "Debit",
+    "price": "Training price",
+    "upTo9": "Up to 9 learners",
+    "from10": "From 10 to 49 learners",
+    "from50": "From 50 to 199 learners",
+    "from200": "200 learners and more",
+    "remuneration": "Andragog is remunerated on the sales and performance of its andragogues: refer to the table above"
+  }
+}

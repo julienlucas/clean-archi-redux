@@ -1,0 +1,56 @@
+mutation createTraining($title: String!) {
+  createTraining(title: $title) {
+    id
+    adaptiveLearning
+    colorScheme
+    createdAt
+    description
+    disabilities
+    language
+    modalities
+    screenSizes
+    title
+    author {
+      id
+      profile {
+        firstname
+        id
+        lastname
+        recap
+        email
+      }
+    }
+    objectives {
+      order
+      value
+    }
+    prerequisites {
+      order
+      value
+    }
+    qualifications {
+      title
+    }
+    skills {
+      name
+    }
+    targets {
+      title
+    }
+    thumbnail {
+      miniatureXPosition
+      miniatureYPosition
+      miniatureZoom
+      path
+      xPosition
+      yPosition
+      zoom
+    }
+    theme {
+      dateOfCreation
+      fonts
+      id
+      version
+    }
+  }
+}
